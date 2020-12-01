@@ -11,12 +11,12 @@
     \faGithub & \href{https://github.com/philiplinden/}{philiplinden}
   \end{tabular}
 } \rcontact{
-  \begin{tabular}{@{}r@{}}
-    me@email.com \\
-    1 Quiet St \\
-    Santa Clara, CA 95050 \\
-    (555) 555-5555
-  \end{tabular}
+    \begin{tabular}{@{}r@{}}
+        me@email.com \\
+        1 Quiet St \\
+        Santa Clara, CA 95050 \\
+        (555) 555-5555
+    \end{tabular}
 }
 
 \section{Professional Summary}
@@ -39,21 +39,21 @@ Master of Engineering in Mechanical Engineering \\
 
 \section{Technical Skills}
 Systems Engineering, Mechanical Engineering, Aerospace Engineering,
-Electro-Optical Engineering, Image Processing, Python, MATLAB, OpenCV, Git,
-Docker, CAD, {\textrm \LaTeX}, MS Office Superuser, Linux, Controls, Technical Writing
+Electro-Optical Engineering, Image Processing, Git, Python, MATLAB, Simulink,
+OpenCV, Docker, CAD, {\textrm \LaTeX}, MacOS, Linux, Controls, Technical Writing
 
 \section{Engineering Experience}
 
 \headerwithlabel{Planet}{San Francisco, CA}{November 2018 -- Present}
 Space Systems Engineer / Flight Operator, SkySat Mission Operations
 \begin{itemize}
-  \item Conducted flight operations for the SkySat constellation of 15
-  satellites, including manual commanding, anomaly investigation \& resolution,
-  and development of new spacecraft activities and operations procedures. 
+  \item Conducted flight operations for the SkySat constellation of 21 Earth 
+  observation satellites, including manual commanding, anomaly investigation \&
+  resolution, and development of new spacecraft activities, operations 
+  procedures, automated procedures, and automated on-orbit activities.
   \item Maintained spacecraft testbed and ground support equipment for
   hardware-in-the-loop testing.
-  \item {\bf Projects:} SkySat Testbeds, SkySat Payload Commissioning \&
-  Recalibration
+  \item {\bf Projects:} SkySat Payload Commissioning \& Recalibration
 \end{itemize}
 
 \headerwithlabel{Lockheed Martin Space}{Sunnyvale, CA}{June 2017 -- November 2018}
@@ -63,8 +63,7 @@ Electro-Optical Engineer, Optical Payload Center of Excellence
   \item Systems engineering and Electro-Optical engineering on IRAD projects to
   support major business pursuits.
   \item Led a software team through critical development milestones for Matlab
-  engineering tools. 
-  \item {\bf Projects:} Machine Learning Hackathon
+  engineering tools.
 \end{itemize} 
 \headerwithlabel{SpaceX}{Hawthorne, CA}{June -- August 2016}
 Vehicle Engineering Intern, Capsule Structures
@@ -78,8 +77,7 @@ Vehicle Engineering Intern, Capsule Reusability \hfill January -- July 2015
   \item Project development, including hands-on prototyping and designing,
   conducting and \\
   presenting experiments to explore changes to Dragon Cargo space capsules.
-  \item {\bf Projects:} Dragon Capsule Water Sealing, Dragon Capsule Parachute
-  Packing Tool Rework
+  \item {\bf Projects:} Dragon Capsule Water Sealing
 \end{itemize}
 
 \headerwithlabel{RIT Center for Detectors}{Rochester, NY}{March -- May 2016}
@@ -100,7 +98,6 @@ Lab Assistant, Mechanical Engineer
 \headerwithlabel{GE Aviation}{Cincinnati, OH}{January -- May 2014}
 Engineering Co-op, Ultrasonic Non-Destructive Test Lab
 \begin{itemize}
-  \item Operated ultrasonic transducers and 3-axis scanners.
   \item Analyzed scan imagery for component defects in test samples and flight
   hardware, including \\
   composite delaminations and weld voids.
@@ -113,8 +110,7 @@ Engineering Co-op, Ultrasonic Non-Destructive Test Lab
 Alumni Member
 \begin{itemize}
   \item Mentor undergraduate students working on space exploration projects.
-  \item Principal Investigator and Project Lead for computer vision and remote
-  sensing payloads.
+  \item Provide subject-matter expertise in imaging projects and control systems.
   \item {\bf Projects:} SPEX Project Definition Document Template, {\it Where U
   At Plants?}~(WUAP) HAB Payload, SPEXcast
 \end{itemize}
@@ -125,12 +121,13 @@ Alumni Member
 \break
 \section{Detailed Project Descriptions}
 
-\headerwithlabel{Cosmic Dawn Intensity Mapper (CDIM)}{\href{https://github.com/runphilrun/CDIM-design/blob/master/cdim_design.pdf}{github.com/runphilrun/CDIM-design}}{\bf Graduate Paper}
+\headerwithlabel{Cosmic Dawn Intensity Mapper (CDIM)}{\href{https://ui.adsabs.harvard.edu/abs/2019BAAS...51g..23C/abstract}{NASA ADS abstract} | \href{https://arxiv.org/abs/1903.03144}{arXiv:1903.03144}}{\bf Graduate Paper}
 Contributed to a proposal for a Probe Class (\textasciitilde\$850M) NASA mission
 for a 1.5 meter space telescope intended to observe near-infrared light from the
 early universe. Compiled financial, mass, and power budgets for the optics,
 instruments, cryocooler \& spacecraft. Defined system-level design, generated
-representative CAD models and figures of the spacecraft.
+representative CAD models and figures of the spacecraft. This mission was 
+published in the NASA 2020 Decadal Survey. My contribution: \href{https://github.com/runphilrun/CDIM-design/blob/master/cdim_design.pdf}{\it github.com/runphilrun/CDIM-design}
 
 \headerwithlabel{1 kW Arcjet Thruster}{\href{https://github.com/RIT-Space-Exploration/msd-P17101/blob/master/p17101.pdf}{github.com/RIT-Space-Exploration/msd-P17101}}{\bf Undergraduate Capstone}
 Developed the concept, system-level design, and nozzle design for a small scale
@@ -139,17 +136,21 @@ and electrical engineers. Responsible for communication between the team and the
 customer (RIT Space Exploration). Designed and performed CFD analysis on the
 thruster nozzle.
 
-\headerwithlabel{SkySat Testbeds}{Planet}{}
-Served as team point-of-contact for SkySat testbeds, which are used for
-hardware-in-the-loop testing before updating firmware or sending new commands to
-on-orbit spacecraft. I update configurations and resolve anomalies to maintain
-uptime of the testbeds, which are located remotely from engineering
-headquarters.
+\headerwithlabel{High Altitude Balloon Autonomous Altitude Control
+System}{\href{https://brickworks.github.io/Nucleus/pdr_altitudecontrol/}{brickworks.github.io/Nucleus}}{\it
+Work In Progress} Designed a control system for a high altitude balloon (HAB)
+to maintain a target altitude by venting gas from the balloon and dropping
+ballast mass in flight. I modeled passive flight dynamics of a HAB in MATLAB,
+Simulink, and Python. I developed a state machine and control system in
+Simulink and used the model to tune a PID controller. I then derived a
+state-space model, Kalman filter, and LQR controller from scratch to achieve
+better performance. First flight expected to launch in 2021.
 
 \headerwithlabel{SkySat Payload Commissioning \& Recalibration}{Planet}{}
-Conducted on-orbit calibration of payload subsystems. I developed new procedures
-and Python scripts to calibrate and commission the payloads of two newly
-launched SkySats and recalibrate payloads of the rest of the 15-satellite fleet.
+Conducted on-orbit calibration of payload subsystems. I developed new
+procedures and Python scripts to automate calibration workflows and commission
+the payloads of eight newly launched SkySats and recalibrate payloads of the
+rest of the 21-satellite fleet.
 
 \headerwithlabel{Where U At Plants?~(WUAP) High Altitude Balloon Payload}{\href{https://github.com/RIT-Space-Exploration/hab-cv/}{github.com/RIT-Space-Exploration/hab-cv}}{}
 Where U At Plants? (WUAP) is a high-altitude balloon payload using on-board
@@ -170,27 +171,16 @@ telescope, and mechanical supports in Solidworks 2015. I was the systems
 engineer for payload integration with a Black Brant IX at NASA Wallops Flight
 Facility.
 
-\headerwithlabel{Machine Learning Hackathon}{Lockheed Martin Space}{}
-Led a team to win a company-wide machine learning hackathon competition.
-Implemented Expectation Maximization algorithm using K-means in Python3 with
-sci-kit learn. Presented the project approach and results to a panel of LM
-Engineering \& Technology upper management. 
-
 \headerwithlabel{Dragon Capsule Water Sealing}{SpaceX}{}
 Designed and tested retrofits to the Dragon Cargo capsule in order to prevent
 water ingress on splashdown. Investigated water entry paths, conducted
 experiments to validate designs, and implemented modifications on flight
 hardware present on Dragon vehicles since the CRS-7 mission.
 
-\headerwithlabel{Dragon Capsule Parachute Packing Tool Rework}{SpaceX}{}
-Designed and implemented modifications to the Dragon Cargo parachute packing
-tool, including working with third party vendors to deliver flight critical
-components.
-
 \headerwithlabel{GEnx Flowpath Spacer Inspection Optimization}{GE Aviation}{}
-Optimized parameters for detection of internal wrinkles in composite layups with
-complex geometry during ultrasonic inspection. Conducted destructive microscopy
-to validate results and presented findings to principal engineers.
+Optimized parameters for detection of internal wrinkles in composite layups
+with complex geometry during ultrasonic inspection. Conducted destructive
+microscopy to validate results and presented findings to principal engineers.
 
 \headerwithlabel{SPEX Project Definition Document Template}{\small\href{https://github.com/RIT-Space-Exploration/SPEX-Project-Definition-Documents}{github.com/RIT-Space-Exploration/SPEX-Project-Definition-Documents}}{}
 A Project Definition Document (PDD) documents a SPEX project idea and its
@@ -202,8 +192,11 @@ Students for the Exploration and Development of Space (SEDS).
 
 \headerwithlabel{SPEXcast Podcast}{\href{https://blog.spexcast.com/}{blog.spexcast.com}}{}
 I produce, edit, and co-host a space exploration podcast, which is a weekly
-discussion podcast the science and technology of space exploation. SPEXcast also
-features interviews with space scientists and industry members, including Tory
-Bruno, Chris Hadfield, and NASA Scientists.
+discussion podcast the science and technology of space exploation. SPEXcast
+also features interviews with space scientists and industry members, including
+Tory Bruno, Chris Hadfield, and NASA Scientists.
+
+\section{Other Skills}
+Brazilian Portuguese - Intermediate Level (written \& spoken)
 
 \end{document}
