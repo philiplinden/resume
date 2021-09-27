@@ -10,7 +10,7 @@ space systems and imaging technologies.
 This repository is the source code used to generate my resume.
 
 **A note on privacy:** I have omitted my home address, phone number, and email
-address have been omitted from the public version of this document.
+address from the public version of this document.
 
 ## Compiling from TeX
 To compile this document from source:
