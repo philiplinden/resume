@@ -7,10 +7,14 @@ space systems and imaging technologies.
 * [Resume](https://github.com/philiplinden/resume/blob/master/resume.pdf)
 
 ## This Repository
-This repository is the source code used to generate my resume.
+This repository is the source code used to generate my resume. 
 
-**A note on privacy:** I have omitted my home address, phone number, and email
-address from the public version of this document.
+I have omitted my home address, phone number, and email address from the public
+version of this document in the interest of privacy.
+
+The TeX class and document layout may be used as a template under the 
+[LPPL](https://tldrlegal.com/license/latex-project-public-license-v1.3c-(lppl-1.3c))
+license. Forks of this repository are welcome.
 
 ## Compiling from TeX
 To compile this document from source:
@@ -31,8 +35,7 @@ To compile this document from source:
     1.  In [tectonic](https://tectonic-typesetting.github.io/en-US/): `tectonic -X compile resume.tex`
 
 To use Tectonic with VS Code and LaTeX Workshop, add the following to your 
-`settings.json`. The `tectonic` will now be available as a LaTeX Workshop build
-recipe.
+`settings.json`.
 ```json
 "latex-workshop.latex.recipes": [
    {
@@ -55,3 +58,6 @@ recipe.
       }
 ]
 ```
+The `tectonic` recipe will now be available in LaTeX Workshop
+for compiling `.tex` files. See the [Tectonic V2 CLI docs](https://tectonic-typesetting.github.io/book/latest/v2cli/compile.html)
+for more information.
