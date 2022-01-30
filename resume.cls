@@ -40,7 +40,7 @@
 \RequirePackage{url}      % insert links
 \RequirePackage[T1]{fontenc} % T1 font encoding
 \RequirePackage{lmodern}  % use Latin Modern Sans Serif
-\RequirePackage{fontawesome} % high quality web icons
+\RequirePackage{fontawesome5} % high quality web icons
 % --------
 
 % ======

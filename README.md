@@ -28,4 +28,30 @@ To compile this document from source:
    10. fontawesome (high quality web icons)
 2.  Clone this repository `git clone git@github.com:philiplinden/resume.git`
 3.  Compile `resume.tex`
-    1.  In [tectonic](https://tectonic-typesetting.github.io/en-US/): `tectonic resume.tex`
+    1.  In [tectonic](https://tectonic-typesetting.github.io/en-US/): `tectonic -X compile resume.tex`
+
+To use Tectonic with VS Code and LaTeX Workshop, add the following to your 
+`settings.json`. The `tectonic` will now be available as a LaTeX Workshop build
+recipe.
+```json
+"latex-workshop.latex.recipes": [
+   {
+      "name": "tectonic",
+      "tools": [
+            "tectonic"
+      ]
+   }
+],
+"latex-workshop.latex.tools": [
+   {
+      "name": "tectonic",
+      "command": "tectonic",
+      "args": [ 
+            "-X", // use the V2 CLI
+            "compile", // just compile the tex, don't use Tectonic.toml
+            "%DOC%.tex" 
+      ],
+      "env": {}
+      }
+]
+```
