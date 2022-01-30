@@ -1,14 +1,14 @@
 %% RESUME - Philip Linden
 \documentclass[10pt,final,sans]{resume}
-
 \begin{document}
+
 \setlength\headheight{28pt} % make header tall enough
 \name{PHILIP J. LINDEN}
 \lcontact{
   \begin{tabular}{@{}ll@{}}
     \faLinkedin & \href{https://www.linkedin.com/in/philiplinden/}{philiplinden} \\
-    \faAngellist & \href{https://angel.co/philip-linden}{philip-linden} \\
-    \faGithub & \href{https://github.com/philiplinden/}{philiplinden}
+    \faGithub & \href{https://github.com/philiplinden/}{philiplinden} \\
+    \faTwitter& \href{https://twitter.com/PhilipJLinden}{PhilipJLinden}
   \end{tabular}
 } \rcontact{
     \begin{tabular}{@{}r@{}}
@@ -54,6 +54,7 @@ Space Systems Engineer / Flight Operator, SkySat Mission Operations
   \item Maintained spacecraft testbed and ground support equipment for
   hardware-in-the-loop testing.
   \item {\bf Projects:} SkySat Payload Commissioning \& Recalibration
+  \item {\bf Technical Paper:} Optical Image Stabilization System On-Orbit Calibration
 \end{itemize}
 
 \headerwithlabel{Lockheed Martin Space}{Sunnyvale, CA}{June 2017 -- November 2018}
@@ -121,7 +122,9 @@ Alumni Member
 \break
 \section{Detailed Project Descriptions}
 
-\headerwithlabel{Cosmic Dawn Intensity Mapper (CDIM)}{\href{https://ui.adsabs.harvard.edu/abs/2019BAAS...51g..23C/abstract}{NASA ADS abstract} | \href{https://arxiv.org/abs/1903.03144}{arXiv:1903.03144}}{\bf Graduate Paper}
+\headerwithlabel{Cosmic Dawn Intensity Mapper (CDIM)}
+{\href{https://ui.adsabs.harvard.edu/abs/2019BAAS...51g..23C/abstract}{NASA ADS abstract} | \href{https://arxiv.org/abs/1903.03144}{arXiv:1903.03144}}
+{\bf Graduate Paper}
 Contributed to a proposal for a Probe Class (\textasciitilde\$850M) NASA mission
 for a 1.5 meter space telescope intended to observe near-infrared light from the
 early universe. Compiled financial, mass, and power budgets for the optics,
@@ -129,22 +132,27 @@ instruments, cryocooler \& spacecraft. Defined system-level design, generated
 representative CAD models and figures of the spacecraft. This mission was 
 published in the NASA 2020 Decadal Survey. My contribution: \href{https://github.com/runphilrun/CDIM-design/blob/master/cdim_design.pdf}{\it github.com/runphilrun/CDIM-design}
 
-\headerwithlabel{1 kW Arcjet Thruster}{\href{https://github.com/RIT-Space-Exploration/msd-P17101/blob/master/p17101.pdf}{github.com/RIT-Space-Exploration/msd-P17101}}{\bf Undergraduate Capstone}
+\headerwithlabel{1 kW Arcjet Thruster}
+{\href{https://github.com/RIT-Space-Exploration/msd-P17101/blob/master/p17101.pdf}
+{github.com/RIT-Space-Exploration/msd-P17101}}{\bf Undergraduate Capstone}
 Developed the concept, system-level design, and nozzle design for a small scale
 arcjet thruster demonstration. Worked in a multidisciplinary team of mechanical
 and electrical engineers. Responsible for communication between the team and the
 customer (RIT Space Exploration). Designed and performed CFD analysis on the
 thruster nozzle.
 
-\headerwithlabel{High Altitude Balloon Autonomous Altitude Control
-System}{\href{https://brickworks.github.io/Nucleus/pdr_altitudecontrol/}{brickworks.github.io/Nucleus}}{\it
-Work In Progress} Designed a control system for a high altitude balloon (HAB)
-to maintain a target altitude by venting gas from the balloon and dropping
-ballast mass in flight. I modeled passive flight dynamics of a HAB in MATLAB,
-Simulink, and Python. I developed a state machine and control system in
-Simulink and used the model to tune a PID controller. I then derived a
-state-space model, Kalman filter, and LQR controller from scratch to achieve
-better performance. First flight expected to launch in 2021.
+\headerwithlabel{Optical Image Stabilization System On-Orbit Calibration}
+{\href{https://digitalcommons.usu.edu/smallsat/2021/all2021/189/}{Small Satellite Conference 2021}}
+{\bf Publication}
+Led a small team to calibrate SkySat Optical Image Stabilization (OIS) System,
+and overhauled the calibration process into an automated procedure. The
+automated procedure improved calibration from a manual effort requiring weeks
+of effort by a subject matter expert, to a code-assisted workflow that may be
+completed by any flight operator in a matter of hours. Wrote a conference paper
+and technical presentation describing key concepts of the technology, an
+overview of the calibration approach, and key results of the effort. The
+calibrated OIS system improves SNR and constrains motion blur to less than 1
+pixel while also allowing faster scan rates and HDR captures.
 
 \headerwithlabel{SkySat Payload Commissioning \& Recalibration}{Planet}{}
 Conducted on-orbit calibration of payload subsystems. I developed new
@@ -152,7 +160,19 @@ procedures and Python scripts to automate calibration workflows and commission
 the payloads of eight newly launched SkySats and recalibrate payloads of the
 rest of the 21-satellite fleet.
 
-\headerwithlabel{Where U At Plants?~(WUAP) High Altitude Balloon Payload}{\href{https://github.com/RIT-Space-Exploration/hab-cv/}{github.com/RIT-Space-Exploration/hab-cv}}{}
+\headerwithlabel{High Altitude Balloon Autonomous Altitude Control
+System}{\href{https://brickworks.github.io/Nucleus/pdr_altitudecontrol/}{brickworks.github.io/Nucleus}}
+{\it Work In Progress}
+Designed a control system for a high altitude balloon (HAB) to maintain a
+target altitude by venting gas from the balloon and dropping ballast mass in
+flight. I modeled passive flight dynamics of a HAB in MATLAB, Simulink, and
+Python. I developed a state machine and control system in Simulink and used the
+model to tune a PID controller. I then derived a state-space model, Kalman
+filter, and LQR controller from scratch to achieve better performance. First
+flight expected to launch in 2021.
+
+\headerwithlabel{Where U At Plants?~(WUAP) High Altitude Balloon Payload}
+{\href{https://github.com/RIT-Space-Exploration/hab-cv/}{github.com/RIT-Space-Exploration/hab-cv}}{}
 Where U At Plants? (WUAP) is a high-altitude balloon payload using on-board
 image processing with a Raspberry Pi 3, Python 3 and OpenCV 3.3 to mask RGB
 images of the Earth and attempts to mask areas of vegetation using colorspace
@@ -163,7 +183,8 @@ Definition Document} and
 \href{https://github.com/RIT-Space-Exploration/hab-cv/blob/master/reports/HAB4%20Post%20Flight%20Report/report_wuap_postflight-hab4.md}{post-flight
 report} document the design intent and discuss the results.
 
-\headerwithlabel{Cryogenic Star Tracking Attitude Regulation System (CSTARS)}{RIT Center for Detectors}{}
+\headerwithlabel{Cryogenic Star Tracking Attitude Regulation System (CSTARS)}
+{RIT Center for Detectors}{}
 Designed the mechanical model of CSTARS, an experiment endorsed by the New York
 Space Grant and funded with \$100,000 by NASA's Undergraduate Student Instrument
 Program. I designed CAD models for the cryogenic thermal regulation system,
@@ -181,14 +202,6 @@ hardware present on Dragon vehicles since the CRS-7 mission.
 Optimized parameters for detection of internal wrinkles in composite layups
 with complex geometry during ultrasonic inspection. Conducted destructive
 microscopy to validate results and presented findings to principal engineers.
-
-\headerwithlabel{SPEX Project Definition Document Template}{\small\href{https://github.com/RIT-Space-Exploration/SPEX-Project-Definition-Documents}{github.com/RIT-Space-Exploration/SPEX-Project-Definition-Documents}}{}
-A Project Definition Document (PDD) documents a SPEX project idea and its
-objectives. This template defines the internal standard of quality for all SPEX
-PDDs and also serves as a template for other projects to build from. This
-template was used to define the scope of RIT's payload for the Intercollegiate
-Rocket Engineering Competition 2018, earning the project a \$1000 grant from
-Students for the Exploration and Development of Space (SEDS).
 
 \headerwithlabel{SPEXcast Podcast}{\href{https://blog.spexcast.com/}{blog.spexcast.com}}{}
 I produce, edit, and co-host a space exploration podcast, which is a weekly
