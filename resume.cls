@@ -89,7 +89,7 @@
   {\large\bf\raggedright}{}{0em}{}
 
 \newcommand{\headerwithlabel}[3]{% bold first item, italic second, right align third
-  \vspace{0.3em}{{\bf #1}~{\it\normalsize #2}\hfill {\normalsize#3}} \\
+  \vspace{0.3em}{{\bf #1}~{\it\normalsize #2}\hfill {\it\normalsize#3}} \\
 }
 
 % TABLES AND LISTS
